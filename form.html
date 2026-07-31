@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Eco Planet</title>
+</head>
+
+<body class="form-main">
+    <div class="container">
+        <section class="navbar-section slide-in-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Головна</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html#about">Про нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#problems">Проблеми</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#facts">Факти</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="solution.html">Рішення</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="static.html">Cтатискика</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pets.html">Захист тварин</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plants.html">Рослини під загрозою</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="form.html">Долучитися</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <h1 class="title-form bounce-in-top">Долучися до нас щоб допомогти зберегти нашу планету🌎💚</h1>
+
+        <img class="photo scale-in-center wobble-hor-bottom" src="https://vkurse.ua/wp-content/uploads/2025/11/yak-zberegty-pryrodu-1024x543.jpeg" alt="">
+        <section class="form-section">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                        Please write your first name.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="valid-feedback">
+                        Please write your last name.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Виберіть свою місію</option>
+                    <option value="1">Висаджування дерев</option>
+                    <option value="2">Переробка відходів</option>
+                    <option value="3">Сортування сміття</option>
+                    <option value="4">Прибирання території</option>
+                    <option value="5">Очищення водойм</option>
+                    <option value="6">Допомога безпритульним тварин</option>
+                    <option value="7">Охорона рідкісних видів тварин</option>
+                    <option value="8">Озеленення територій</option>
+
+                </select>
+
+                <label for="range4" class="form-label">Наскільки часто ви інтересуєтесь захистом довкілля?</label>
+                <input type="range" class="form-range" min="0" max="100" value="50" id="range4">
+                <output for="range4" id="rangeValue" aria-hidden="true"></output>
+
+                <script>
+                    // This is an example script, please modify as needed
+                    const rangeInput = document.getElementById('range4');
+                    const rangeOutput = document.getElementById('rangeValue');
+
+                    // Set initial value
+                    rangeOutput.textContent = rangeInput.value;
+
+                    rangeInput.addEventListener('input', function () {
+                        rangeOutput.textContent = this.value;
+                    });
+                </script>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1">
+                        Активно захищаю довкілля
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                    <label class="form-check-label" for="radioDefault2">
+                        Хочу долучитися до захисту довкілля
+                    </label>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Напишіть свій коментар</label>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        🌎Eco Planet
+                    </a>
+                </div>
+            </nav>
+        </footer>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
