@@ -71,14 +71,14 @@
                 </label>
                 <div class="col-md-4">
                     <label for="validationCustom01" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <input type="text" name="firstName" class="form-control" id="validationCustom01" value="" required>
                     <div class="valid-feedback">
                         Please write your first name.
                     </div>
                 </div>
                 <div class="col-md-4">
                     <label for="validationCustom02" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <input type="text" name="lastName" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
                         Please write your last name.
                     </div>
@@ -87,7 +87,7 @@
                     <label for="validationCustomUsername" class="form-label">Username</label>
                     <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="validationCustomUsername"
+                        <input type="text" name="username" class="form-control" id="validationCustomUsername"
                             aria-describedby="inputGroupPrepend" required>
                         <div class="invalid-feedback">
                             Please choose a username.
@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <select class="form-select" aria-label="Default select example">
+                <select name="mission" class="form-select" aria-label="Default select example">
                     <option selected>Виберіть свою місію</option>
                     <option value="1">Висаджування дерев</option>
                     <option value="2">Переробка відходів</option>
@@ -109,7 +109,7 @@
                 </select>
 
                 <label for="range4" class="form-label">Наскільки часто ви інтересуєтесь захистом довкілля?</label>
-                <input type="range" class="form-range" min="0" max="100" value="50" id="range4">
+                <input type="range" name="interestFrequency" class="form-range" min="0" max="100" value="50" id="range4">
                 <output for="range4" id="rangeValue" aria-hidden="true"></output>
 
                 <script>
@@ -126,13 +126,13 @@
                 </script>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <input class="form-check-input" type="radio" name="engagement" id="radioDefault1" value="active">
                     <label class="form-check-label" for="radioDefault1">
                         Активно захищаю довкілля
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="engagement" id="radioDefault2" value="want_to_join" checked>
                     <label class="form-check-label" for="radioDefault2">
                         Хочу долучитися до захисту довкілля
                     </label>
@@ -142,14 +142,14 @@
 
                 <div class="col-md-6">
                     <label for="validationCustom03" class="form-label">City</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <input type="text" name="city" class="form-control" id="validationCustom03" required>
                     <div class="invalid-feedback">
                         Please provide a valid city.
                     </div>
                 </div>
                 <div class="col-md-3">
                     <label for="validationCustom04" class="form-label">State</label>
-                    <select class="form-select" id="validationCustom04" required>
+                    <select name="state" class="form-select" id="validationCustom04" required>
                         <option selected disabled value="">Choose...</option>
                         <option>...</option>
                     </select>
@@ -159,21 +159,21 @@
                 </div>
                 <div class="col-md-3">
                     <label for="validationCustom05" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <input type="text" name="zip" class="form-control" id="validationCustom05" required>
                     <div class="invalid-feedback">
                         Please provide a valid zip.
                     </div>
                 </div>
 
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    <textarea name="comment" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                         style="height: 100px"></textarea>
                     <label for="floatingTextarea2">Напишіть свій коментар</label>
                 </div>
 
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <input class="form-check-input" type="checkbox" name="terms" value="agreed" id="invalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
                             Agree to terms and conditions
                         </label>
