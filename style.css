@@ -1,3 +1,107 @@
+/* Styles for iPhone 13 Pro Max and smaller devices */
+@media (max-width: 428px) {
+
+  .navbar {
+    width: 420px !important;
+    margin: 5px 0;
+  }
+
+  .navbar.sticky-top {
+    width: 420px !important;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar-section {
+    width: 416px;
+    margin: 5px auto;
+  }
+
+  .problems {
+    width: 350px;
+    margin-left: 20px;
+  }
+
+  .solution-section {
+    width: 395px;
+  }
+
+  .card-set {
+    flex-direction: column;
+  }
+
+  .text-solution {
+    text-align: left;
+  }
+
+  .article-static {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034)
+  }
+
+  #myPieChart {
+    display: block;
+    box-sizing: border-box;
+    height: 500px;
+    width: 332px;
+  }
+
+  .title-pets {
+    font-size: 22px;
+  }
+
+  .problems-pets {
+    width: 350px;
+    margin-left: 20px;
+  }
+
+  .card-text {
+    text-align: left;
+  }
+
+  .title-problem {
+    font-size: 30px;
+  }
+
+  /* .title-form{
+    font-size: 35px;
+  } */
+
+  .video-pets {
+    width: 300px;
+    height: 235px;
+  }
+
+  .video-description {
+    text-align: left;
+  }
+
+  .article {
+    text-align: left;
+  }
+
+  .title-plants {
+    font-size: 25px
+  }
+
+  .article-text {
+    text-align: left;
+  }
+
+  .title-form {
+    font-size: 23px;
+  }
+
+  .titles {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
 .problems {
   display: flex;
   flex-wrap: wrap;
@@ -398,8 +502,8 @@ body {
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-    width: 1300px;
-    margin: 0 auto;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -414,9 +518,17 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 1300px;
   z-index: 1030;
   background-color: rgba(255, 255, 255, 0.98);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 0 auto;
+}
+
+.navbar-section {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .about-text {
@@ -1192,117 +1304,24 @@ p {
   }
 }
 
-.titles{
-    text-align: center;
-  }
-
-  .article-text{
-    text-align: left;
-  }
-
-
-
-
-
-
-
-/* Styles for iPhone 13 Pro Max and smaller devices */
-@media (max-width: 428px) {
-
-  .navbar{
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .navbar.sticky-top{
-    width: 100% !important;
-    left: 0;
-    right: 0;
-  }
-
-  .navbar-section{
-    width: 100%;
-    margin: 5px auto;
-  }
-
-  .problems {
-    width: 350px;
-    margin-left: 20px;
-  }
-
-  .solution-section {
-    width: 395px;
-  }
-
-  .card-set {
-    flex-direction: column;
-  }
-
-  .text-solution {
-    text-align: left;
-  }
-
-  .article-static {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034)
-  }
-
-  #myPieChart {
-    display: block;
-    box-sizing: border-box;
-    height: 500px;
-    width: 332px;
-  }
-
-  .title-pets {
-    font-size: 22px;
-  }
-
-  .problems-pets {
-    width: 350px;
-    margin-left: 20px;
-  }
-
-  .card-text {
-    text-align: left;
-  }
-
-  .title-problem {
-    font-size: 30px;
-  }
-
-  /* .title-form{
-    font-size: 35px;
-  } */
-
-  .video-pets {
-    width: 300px;
-    height: 235px;
-  }
-
-  .video-description {
-    text-align: left;
-  }
-
-  .article {
-    text-align: left;
-  }
-
-  .title-plants {
-    font-size: 25px
-  }
-
-  .article-text {
-    text-align: left;
-  }
-
-  .title-form {
-    font-size: 23px;
-  }
-
-  .titles{
-    text-align: center;
-  }
+.titles {
+  text-align: center;
 }
+
+.article-text {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
   .card-set {
@@ -1354,39 +1373,39 @@ p {
     font-size: 32px;
   }
 
-  .title-solution{
+  .title-solution {
     font-size: 32px;
   }
 
-  .title-form{
+  .title-form {
     font-size: 23px;
   }
 
-  .title-pets{
+  .title-pets {
     font-size: 25px;
   }
 
-  .red{
+  .red {
     font-size: 23px;
   }
 
-  .title-plants{
+  .title-plants {
     font-size: 27px;
   }
 
-  .card-text{
+  .card-text {
     text-align: left;
   }
 
-  .text-solution{
+  .text-solution {
     text-align: left;
   }
-  
-  .titles{
+
+  .titles {
     text-align: center;
   }
 
-  .article-text{
+  .article-text {
     text-align: left;
   }
 
