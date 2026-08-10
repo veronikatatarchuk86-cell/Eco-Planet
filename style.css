@@ -1324,6 +1324,22 @@ p {
 
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
+   
+   .navbar {
+    width: 700px !important;
+    /* margin: 5px 0; */
+  }
+
+  .navbar.sticky-top {
+    width: 750px !important;
+    left: 0;
+    right: 0;
+  }
+
+  .about{
+       /* margin-left: -9px; */
+  }
+  
   .card-set {
     display: flex;
     flex-wrap: wrap;
