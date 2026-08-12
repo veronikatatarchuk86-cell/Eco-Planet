@@ -2,14 +2,6 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarCollapse = document.querySelector(".navbar-collapse");
 const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-if (navbarToggler && navbarCollapse) {
-  navbarToggler.addEventListener("click", () => {
-    const isExpanded = navbarToggler.getAttribute("aria-expanded") === "true";
-    navbarToggler.setAttribute("aria-expanded", String(!isExpanded));
-    navbarCollapse.classList.toggle("show", !isExpanded);
-  });
-}
-
 if (navbarLinks.length) {
   navbarLinks.forEach((link) => {
     link.addEventListener("click", () => {
@@ -185,6 +177,7 @@ const pieConfig = {
     plugins: {
       legend: {
         position: 'right',
+        flexDirection: 'column',
         labels: {
           font: {
             size: 15 // Розмір тексту легенди
