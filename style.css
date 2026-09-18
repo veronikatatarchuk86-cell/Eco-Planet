@@ -1464,3 +1464,12 @@ p {
     display: none;
   }
 }
+
+.blur-up {
+  filter: blur(10px);
+  transition: filter 400ms ease-in-out;
+}
+
+.blur-up.lazyloaded {
+  filter: blur(0);
+}
